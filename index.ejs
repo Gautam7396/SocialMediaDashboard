@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+         body {
+          background-image: url('https://t4.ftcdn.net/jpg/06/79/88/59/240_F_679885916_qYDNsR73NfrsWB6oS3SE1pWVJugCrXfK.jpg'); 
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+      }
+     .container{
+        margin: 55px;
+      }
+      .btn {
+        background-color: blue !important;
+      }
+      .btn > a{
+        text-decoration: none;
+        color: white !important;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home Page</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+              <%if(status=="loggedIn"){%>
+                <li class="nav-item"> <a class="nav-link" href="/profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                <%}else{%>
+                  <li class="nav-item"> <a class="nav-link" href="/register">Register</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                  <%}%>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    <div class="container">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+              <%if(status=="loggedIn"){%>
+              <h5 class="card-title">Welcome <%= user.email%></h5>
+              <p class="card-text">Hello Everyone My Name is  Gautam Saxena and I am  pursuing Btech from SVVV</p>
+              <%}else{%>
+                <h5 class="card-title">Welcome to the site</h5>
+                <%}%>
+              <h6 class="card-subtitle mb-2 text-muted">GAAS(Gautam Ayush Ankur Saxena) Pvt Limited </h6>
+              <p class="card-text">Hello ,My Name is Gautam Saxena and I am working as Full Stack Developer </p>
+              <%if(status=="ok"){%>
+              <button  class = "btn btn_primary"><a href="/profile"style="color:white;text-decoration: none" >Profile</a></button>
+              <button  class = "btn btn_primary"><a href="/logout" style="color:white;text-decoration: none">Logout</a></button>
+              <button class ="bt btn_primary"><a href="/dashboard" style="color:white;text-decoration: none">Dashboard</a></button>
+                <%}else{%>
+                  <button  class = "btn btn_primary"><a href="/login" style="color:white;text-decoration: none">Login</a></button>
+                  <button  class = "btn btn_primary"><a href="/register" style="color:white;text-decoration: none">Register</a></button>
+                  <%}%>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

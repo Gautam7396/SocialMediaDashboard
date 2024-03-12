@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+      body {
+          background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8PDw8NDw0PDw8PDw8PDw8NFREWFhURFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDysZFRkrKzc3LSsrKystKy0tKy0tKystKzcrNzctKzc3NysrKy0tNy0rLS0rKystKysrLSstK//AABEIALcBEwMBIgACEQEDEQH/xAAYAAADAQEAAAAAAAAAAAAAAAAAAQIDB//EABoQAQEBAQADAAAAAAAAAAAAAAABEQISYfD/xAAYAQEBAQEBAAAAAAAAAAAAAAABAAIFBP/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A6dFSCQ5HJes5FQoqNRCRUgkOQ4DkPDkVI1jJYchyKxrEWHIeKw4EyHhyGcBYMUMOJODFYMWJNgxQxYkYVi8GDCzwvFphWDFrOxNjTCsGFlYVjSxNjNhZ2JsaWJsZsKLE2LqayUWJsXU0VIwKJktFQpFSNwHDkEVGgJFSCRUjUgEXIJFSNSMiQ5DkONIDDNrARngWAsPDBRDDwJJCgknCxRDEWFisIFNibFlgws7E2NbEWM2FnU2NLE2M2FlYVi7E2MlFTYuprJRgMDEtUKKjUBxUKRcjUBxUhSLjcByKhRUagEhnhtQEZggAwUAAgAAkCMJFgMIpwlAJJWKKgosTY0qazSzqbGlibGaWVTWliKxSzsTY0qay0jAeAJUVCio0DkXExcajKpFQouNwHIeCHGgFEbQBgFAAIAwEgCCQACQACIIwkkGQRJqiBRU1dTWKUWIrSs7GaUVFaVFYrSAeAJUi4mKhgqouJ5XG4FRUKKjcBxSYppkzhQygAZAACQACQACRGAkAAkQASIUyRIqZM1JTV1FZrSKitKis0s6mrqaxSgGTJVFxEVDBVxcRGkbgVFRMVG2VGUNqAzIygZAgwAkAAkAAkRgJAjCRABEEZBER0qKiqaqpopTUVdRWK0zqauorFMSAGScVExUMC+WnLPlcbgXFJio3AoyhtMnDKGUAAQYIJGAEgAEgAEgCCQACIIAIipkEVTTTWSmoq6jpitRFTVVHTFahAEEcVERXPowVpFxnF8twNIqIipWoFnExUaBmQaCgRpAyBBgBIAEkYBJGQCQIyRBUyCCaZaCVTTqaxSmoqqis0pqaqorFaIDSCEq4zipVE0i4zlVK1A1ipWcq43AuKRFRplRpNoKBApQIJGCNIAAgABEAgkACCBU0hC0gVrJKpp2otZpKop2ptYrSamnU1kjftBAEpVSoiokuVcrOKjQaSrlZSrlalZaSqlZyqlblDTT1Ep6Qs9Rp60lAtCCgQKM0hIwQSMtLRq1GRaLQQQTaEdqbRam1m0i1FotTaxSVTadTWa0VTTtTayRoLQEUVKiU5SmkOVEUQuLlZyqlagaSqlZSqlalDWU9ZyqlMqaaes5T1rQ00aiUyFaaNPUlBOjTqURaNCPSLS1JWlpaWjSdqbStK1nSLU2i1NotQqbRam1itCptOpoQqbRaVZICdAJRUoCSpThhqA9VoBBxUoDUCpT0BoK0aAUrT0AgaegJDRoCQ0tASGloCRaVpAEtK0BkptK0AUxOkQCKptMMlNSAEXkAA0//2Q=='); 
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+      }
+  </style>
+  </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Dashboard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile">Profile</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/createpost">CreatePost</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+       
+      <div class="container my-5">
+        <center>
+        <section class="posts">
+          <hr>
+          <h2>Recent Posts</h2>
+          <hr>
+          <div class="post">
+              <h3>Post Title</h3>
+              <h3>Post Content</h3>
+              <h3>Post Date</h3>
+          </div>
+          <hr>
+      </section>
+    </center>
+    <div class="card" style="margin: 16px; border-radius: 16px;" id="postCard" style="width: 100%;">
+      <div class="card-body">
+        <h5 class="card-title" id="postCardTitle"></h5>
+        <p class="card-content" id="postCardContent"></p>
+      </div>
+    </div>
+    
+    <script src="./js/dashboard.js"></script>
+
+</body>
+</html>

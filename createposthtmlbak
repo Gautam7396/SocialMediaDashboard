@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>body {
+      background-image: url('data:image/jpeg;base64,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'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+</style>
+  </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Create Post</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/dashboard">Dashboard</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container my-5">
+
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title">Post Form</h5>
+              <form onsubmit="return false;" id="form">
+                 
+                
+                <div class="mb-3">
+                  <label for="postid" class="form-label">PostId</label>
+                  <input type="postid" class="form-control" id="postid">
+                </div>
+                 
+                <div class="mb-3">
+                  <label for="title" class="form-label">Title</label>
+                  <input type="title" class="form-control" id="title" >
+                </div>
+                <div class="mb-3">
+                  <label for="content" class="form-label">Content</label>
+                  <input type="content" class="form-control" id="content">
+                </div>
+                <div class="mb-3">
+                  <label for="createdAt" class="form-label">CreatedAt</label>
+                  <input type="createdAt" class="form-control" id="createdAt">
+                </div>
+                
+                <div class="alert alert-danger" role="alert" id="error" style="display: none;" ></div>
+                <div class="alert alert-success" role="alert" id="success" style="display: none;" ></div>
+
+                <div>
+                  <label for="image">Image:</label>
+                  <input type="file" id="image" name="image" accept="image/*" >
+               </div>
+               <br>
+               
+                <button type="submit" class="btn btn-primary">Post</button>
+              </form>
+            </div>
+          </div>
+    </div>
+    <script src="./js/createpost.js"></script>
+    
+</body>
+</html>
